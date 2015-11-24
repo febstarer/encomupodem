@@ -1,0 +1,131 @@
+/*----------------------------------------------------------------------
+# Package - JM Template
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+.rtl{
+    *{direction: rtl;}
+    [class^="col-lg-"],
+    [class^="col-md-"],
+    [class^="col-sm-"],
+    [class^="col-xs-"],
+    [class*="col-lg-"],
+    [class*="col-md-"],
+    [class*="col-sm-"],
+    [class*="col-xs-"]{
+        float: right;
+    }
+    // for Alert
+    .close {
+        float: left;
+    }
+    .superhero-dropdown > ul {
+        float: left;
+    }
+    ul.menu{
+        text-align: right;
+    }
+    
+    .social-icon{
+        ul{
+            li{
+                float: right;
+                margin-left: 20px;
+                margin-right: 0;
+            }
+        }
+    }
+    .bx-viewport{
+        direction: ltr;
+    }
+    #section-footer ul.menu {
+        float: left;
+    }
+    #section-bottom .region-bottom-fourth ul li {
+        float: right;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    #section-bottom .region-bottom-fourth #block-newsletter-newsletter-subscribe #subscribe:before,
+    #section-bottom .region-bottom-fourth #block-newsletter-newsletter-subscribe #subscribe button{
+        left: 1px;
+        right: auto;
+    }
+    .nav{
+        &.nav-tabs{
+            /*li:first-child {
+                padding-right: 0;
+                padding-left: 20px;
+            }*/
+            li + li {
+                border-right: 1px solid #DEDEDE;
+                border-left: none;
+            }
+        }
+    }
+    //Section-contact
+    .contact-message .contact-detail li i{
+        margin: 0 0 0 10px;
+    }
+    form.contact-form .control-group span.form-required{
+        right: auto;
+        left: -13px;
+    }
+    //Back to top
+    .region-page-bottom .scrolToTop{
+        right: auto;
+        left: 50px;
+    }
+    //blockquote
+    blockquote{
+        border-width: 0 3px 0 0;
+    }
+    //Blog
+    .blog-news .view-content .views-row{
+        .views-field,
+        .port-detail{
+            padding: 0 60px 0 0;
+        }
+        span.field-content,
+        .port-wrap{
+            position: inherit;
+            .blog-date,
+            .port-date{
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+    //Comment================
+    .comment-wrapper{
+        .comment{
+            .comment-detail{
+                .comment-thumb{
+                    margin:0 0 0 25px;
+                }
+            }
+            .comment-body{
+                border-width:0 3px 0 0;
+                margin:0 31px 25px 0;
+                padding: 25px 25px 0 0;
+            }
+            .reply-comment {
+                margin:0 56px 0 0;
+            }
+       }
+    }
+    .indented{
+        margin:0 25px 0 0;
+    }
+    
+    //menu
+    .superhero-dropdown > ul ul.menu-back{
+        left: 0;
+    }
+    #section-header a.superhero-mobile-menu-toggle{
+        right:auto;
+        left:40px;
+    }
+}

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Superhero_maya feature.
+ */
+
+include_once 'superhero_maya.features.inc';

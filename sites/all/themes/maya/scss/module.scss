@@ -1,0 +1,432 @@
+/*----------------------------------------------------------------------
+# Package - JM Template
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+.block{
+    //margin-top: 20px;
+    &:first-child,&.block-system{
+        margin-top: 0;
+    }
+    h3.block-title{
+        font-size: $h2Size;
+        font-weight: normal;
+        line-height: 1;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 10px;
+        padding: 0;
+        color: $color_heading;
+        font-family: $latoFontFamily;
+    }
+    &.title-line{
+        h3.block-title{
+            border-bottom: 1px solid #DDDDDD;
+            color: $color_main;
+            font-size: 18px;
+            font-family: open_sansregular;
+            span.title{
+                display: inline-block;
+                line-height: 1;
+                margin-bottom: -1px;
+                border-bottom: 1px solid $color_link;
+                padding: 0 10px 10px 0;
+            }
+        }
+        a.bx-prev,a.bx-next{
+            color: $color_main;
+        }
+    }
+} 
+ .video-title {
+    &.block{
+        h3.block-title{
+            font-size: 30px;
+        }
+    }
+ }
+// =========== JM-new pro testimonial  ============
+.view-testimonial .bx-wrapper{
+    margin: 0 auto 0;
+    padding: 20px 0 0 0;
+    .views-field-body{
+        padding-bottom: 15px;
+        background: url(../images/arrow_testinomial.png) no-repeat bottom center;
+        .field-content{
+            background: rgba(238, 238, 238, 0.8);
+            border-radius:10px;
+            padding: 15px;
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .views-field-field-image{
+        img{
+            border-radius: 50%;
+            margin: 20px auto;
+            max-width: 100px;
+            @include transition(all 0.18s linear 0s);
+        }
+    }
+    .views-field-field-client{
+        h3.client-name{
+            font-family: 'open_sanssemibold';
+            font-size: 15px;
+            margin: 0;
+            padding: 0;
+            text-transform: uppercase;
+            text-align: center;
+        }  
+    }
+    .views-field-field-job-title{
+        .job-title{
+            color: $white;
+            font-family: 'open_sanssemibold';
+            font-size: 12px;
+            padding: 5px 0 0;
+            text-transform: capitalize;
+            text-align: center;
+        }
+    }
+}
+// =========== end JM-new pro testimonial  ============
+
+
+.bx-wrapper .bx-prev{
+    background: none;
+    left: 0;
+}
+.bx-wrapper .bx-next{
+    background: none;
+    right: 0;
+}
+.bx-wrapper .bx-controls-direction a{
+    text-indent: 0!important;
+    font-size: 23px;
+    width: auto;
+    height: auto;
+}
+
+// =========== latest-work  ============
+.view-latest-work{
+    .bx-controls{
+        position: absolute;
+        top: -20px;
+        right: 0;
+    }
+    .bx-controls-direction{
+        position: relative;
+        width: 22px;
+    }
+    .bx-wrapper .bx-prev{
+        background: none;
+        left: 0;
+    }
+    .bx-wrapper .bx-next{
+        background: none;
+        right: 0;
+    }
+    .bx-wrapper .bx-controls-direction a{
+        text-indent: 0;
+        font-size: 23px;
+        margin-top: -25px;
+        width: auto;
+        height: auto;
+    }
+}
+.rtl{
+    .view-latest-work{
+        .bx-controls{
+            left: 0;
+            right: auto;
+        }
+    }
+}
+// =========== end latest-work  ============
+
+// =========== JM-new pro theteam  ============
+.view-team{
+    .slide-item-image{
+        text-align: center;
+        padding: 0;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        img{
+            max-width: 160px;
+            display: inline-block;
+            border-radius: 50%;
+            height: 160px;
+        }
+        .circle-border{
+            border: 1px solid #ccc;
+            background: none repeat scroll 0 0 transparent;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 99%;
+            height: 99%;
+            border-radius: 50%;
+            z-index: -1;
+            @include transition(all 225ms cubic-bezier(0.5, -0.7, 0.67, 0.7));
+        }
+        &:hover .circle-border{
+            border-color: $color_link;
+            @include scale(1.1);
+        }
+    }
+    .slide-item-desc-warp{
+        .field-name-field-job-title{
+            color: $color_main;
+            font-size: 12px;
+            text-transform: capitalize;
+            padding-top: 5px;
+            font-family: 'open_sansregular';
+        }
+        .slide-item-desc{
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        .user-social{
+            .field-item{
+                display: inline-block;
+                a{
+                    font-size: 20px;
+                    color: #ddd;
+                    margin-left: 10px;
+                    &:hover{
+                        color: $color_main;
+                        &:before{
+                            color: $color_main;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// =========== end JM-new pro theteam  ============
+
+// ===========  JM-tweets  ============
+.sp-twitter{
+    .sp-tweet{
+        text-align: center;
+        padding: 0 50px;
+    }
+}
+// =========== end JM-tweets  ============
+/*
+.block{
+    &.carousel-slide-white{
+        .carousel{
+            background: #fff;
+            @include opacity(80);
+            width: 75%;
+            margin: 0 auto;
+            height: 90px;
+            color: #000;
+            h2{color: #000;margin-top: 23px;}
+        }
+    }
+    .vertical .carousel-inner {
+        height: 100%;
+        min-height: 100px;
+    }
+
+    .carousel.vertical .item {
+        -webkit-transition: 0.6s ease-in-out top;
+        -moz-transition: 0.6s ease-in-out top;
+        -ms-transition: 0.6s ease-in-out top;
+        -o-transition: 0.6s ease-in-out top;
+        transition: 0.6s ease-in-out top;
+    }
+
+    .carousel.vertical .active {
+        top: 0;
+    }
+
+    .carousel.vertical .next {
+        top: 400px;
+    }
+
+    .carousel.vertical .prev {
+        top: -400px;
+    }
+
+    .carousel.vertical .next.left,
+    .carousel.vertical .prev.right {
+        top: 0;
+    }
+
+    .carousel.vertical .active.left {
+        top: -400px;
+    }
+
+    .carousel.vertical .active.right {
+        top: 400px;
+    }
+
+    .carousel.vertical .item {
+        
+    }
+}
+*/
+.carousel-inner{
+    .item{
+        br{
+            display: none;
+        }
+        .carousel-caption{
+            width: 100%;
+            left: auto;
+            right: auto;
+            padding: 10px 0;
+            background:fade_out($color_main,10%);
+            bottom: 0;
+        }
+        //Project >> Width Slider
+        #intro-message{
+            &.carousel-caption{
+                background: transparent;
+                position: absolute;
+                top: 40%;
+            }
+        }
+    }
+}
+
+.sp-tweet{
+    i{
+        display: block;
+        font-size: 40px;
+        width: 100%;
+        clear: both;
+    }
+}
+
+// =========== team-detail  ============
+.consilium-team-detail{
+    .field-label{
+        color: $color_main;
+        font-weight: normal;
+        font-family: 'open_sansbold';
+    }
+    .user-social{
+        .field-item{
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 20px;
+            a:not(.btn){
+                color: $color_main;
+                &:hover{
+                    color: $color_link;
+                }
+            }
+        }
+    }
+}
+// =========== end team-detail  ============
+
+// =========== portfolio-detail  ============
+.portfolio-detail{
+    .portfolio-detail-item{
+        line-height: 30px;
+        font-size: 16px;
+        .field-label{
+            color: $color_main;
+            font-weight: normal;
+            font-family: $latoFontFamily;
+            font-weight: 700;
+            font-size: 25px;
+            color: $color_main;
+        }
+        .portfolio-description{}
+        .field-label-above{
+             .field-label{
+                color: $color_heading;
+                font-size: 16px;
+                font-weight: bold;
+             }
+             .field-label,
+             .field-items{
+                @include ie7-inline-block();
+             }
+        }
+    }
+    margin: 20px 0;
+}
+// =========== end portfolio-detail  ============
+
+.region-sidebar-first, .region-sidebar-second{
+   #block-user-login{
+       .form-text{
+           width: 100%;
+       }
+   } 
+}
+
+// =========== gallery page  ============
+.gallery-filters {
+    margin-bottom: 20px;
+    width: 100%;
+   
+    @extend .center;
+    a{
+         @include ie7-inline-block();
+        background:darken($color_hover,5%);
+        border-color: transparent #ECECEC #ECECEC transparent;
+        border-radius: 4px !important;
+        border-style: solid;
+        border-width: 1px;
+        color: darken($color_text,2%);
+        cursor: pointer;
+        letter-spacing: 0.05em;
+        line-height: 25px;
+        margin-right: 10px;
+        padding: 0 10px;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: capitalize;
+        float: none!important;
+        &.active{
+            background: $color_link;
+            color:$color_hover;
+        }
+        &:hover{
+            background: $color_main;
+            color: $color_hover;
+        }
+    }
+    
+}
+// =========== end gallery page  ============
+
+// =========== Begin Slideshow page  ============
+.md-bullets{
+    position: absolute;
+    left: 50px!important;
+    bottom: 50px!important;
+    width: 30px;
+    height: auto;
+    z-index: 9;
+    .md-bullet{
+        @include ie7-inline-block() ;
+        width: 12px;
+        height: 12px;
+        margin: 5px 7px;
+        @include opacity(50);
+        @include border-radius(0);
+        background: $color_hover;
+        &.md-current,
+        &:hover{
+            @include opacity(100);
+        }
+    }
+}
+// =========== end Slideshow page  ============

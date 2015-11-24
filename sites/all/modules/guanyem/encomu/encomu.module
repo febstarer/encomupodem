@@ -1,0 +1,22 @@
+<?php
+/**
+ *  Implementation of hook_form_alter().
+ */
+function encomu_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    case 'webform_client_form_93':
+      // manifest signature
+      $form['actions']['submit']['#value'] = "Signa el manifest";
+      break;
+  }
+}
+
+/**
+* Removes format options for a form
+*/
+function _remove_format(&$form){
+  unset($form[LANGUAGE_NONE][0]['format']['format']);
+  unset($form[LANGUAGE_NONE][0]['format']['guidelines']);
+  unset($form[LANGUAGE_NONE][0]['format']['help']);
+  return $form;
+}

@@ -1,0 +1,26 @@
+# Catalan translation of Form Block (7.x-1.0-alpha1)
+# Copyright (c) 2014 by the Catalan translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Form Block (7.x-1.0-alpha1)\n"
+"POT-Creation-Date: 2014-08-06 15:06+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Catalan\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+msgid "Contact"
+msgstr "Contacte"
+msgid ""
+"You cannot send more than %number messages per hour. Please try again "
+"later."
+msgstr ""
+"No podeu enviar més de %number missatges per hora. Torneu-ho a provar "
+"més tard."
+msgid "Request new password"
+msgstr "Demana una contrasenya nova"
+msgid "Create new account"
+msgstr "Crea un compte nou"

@@ -1,0 +1,412 @@
+@media (min-width: 1200px) {
+    .superhero-dropdown{
+        > ul {
+            @extend .right;
+            margin-right: 50px;
+            > li{
+                transition: inherit!important;
+                list-style: none;
+                @include ie7-inline-block();
+                margin:0;
+                padding: 0;
+                position: relative;
+                @extend .left;
+                &:hover{
+                    > a{
+                        color: $color_hover;
+                    }
+                }
+                > a{
+                    &:not(.btn){
+                       color: $color_heading; 
+
+                    }
+                    //display:inline;
+                    font-family: $latoFontFamily;
+                    font-size: 14px;
+                    margin: 0;
+                    padding:0 7px;
+                    display: inline-block;
+                    height: 40px;
+                    line-height: 40px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color:#333;
+                    @include transition(inherit);
+                    &:hover,&.active{
+                        color: $color_hover;
+                         background:#333;
+                    }
+                } 
+                &.expanded{
+                    > a:before{
+                        content:  "\f067";
+                        font-family: FontAwesome;
+                        padding-right: 5px;
+                        cursor: pointer;
+                        font-size: 10px;
+                        @include transition(inherit);
+                    }
+                    &:hover,
+                    &.active{
+                        >a{
+                            background: #333;
+                            color: $color_hover;
+                        }
+                    }
+                }
+            }
+
+            ul{
+                background: $color_heading;
+                margin: 30px 0 0 0;
+                padding: 0;
+                &.menu-back{
+                     left: -100%;
+                }
+                li{
+                    padding: 0;
+                    display: block;
+                    a{
+                        display: block;
+                        padding:0 20px;
+                        font-size: 12px;
+                        color:$color_hover;
+                        font-weight: 700;
+                        line-height: 40px;
+                       font-family: $latoFontFamily;
+                        text-transform: uppercase;
+                         @include transition(inherit);
+                        &.active,&:hover {
+                            background:$color_hover;
+                            color: $color_heading;
+                        }
+                    }
+                    &:hover,&.active{
+                        background: $color_hover;
+                        color: $color_heading;
+                    }
+                     &.expanded{
+                        &:hover,&.active{
+                            > a{
+                                color: $color_heading;
+                            }
+                        }
+                     }
+                }
+            }
+        }
+
+        .menu-arrow{
+            display:none;
+        }
+    }
+    .fixed-transition .superhero-dropdown > ul{
+        > li{
+            > a{
+                color: $color_heading;
+                &:hover,&.active{
+                    background: $color_heading;
+                    color:$color_hover;
+                }
+            }
+            &:hover,
+            &.active{
+                //background: $color_heading;
+                >a{
+                    background: $color_heading;
+                    color: $color_hover;
+                }
+            }
+        }
+        ul{
+            background: $color_main;
+            li{
+
+                a{
+                    &.active,&:hover {
+                        background:$color_heading;
+                        color: $color_hover;
+                    }
+                }
+                &:hover,&.active{
+                    a{
+                        background: $color_heading;
+                        color: $color_hover;
+                    }
+                }
+                &.expanded{
+                    &:hover,&.active{
+                       > a{
+                            color: $color_hover;
+                            background: $color_heading;
+                        }
+                    }
+                }
+            }
+        } 
+    }
+    .header-clear{
+        .superhero-dropdown > ul{
+            > li{
+                &:hover,
+                &.active{
+                    > a{
+                        color: $color_heading;
+                    }
+                }
+                > a{
+                    color: $color_hover;
+                    &:hover,
+                    &.active{
+                        color: $color_heading;
+                        background: $color_hover;
+                    }
+                }
+                &.expanded{
+                    &:hover,
+                    &.active{
+                        > a{
+                            background: $color_hover;
+                            color: #333;
+                        }
+                    }
+                } 
+            }
+            ul{
+                background:rgba(0,0,0,0.3);
+                li{
+                    a{
+                        &:hover,
+                        &.active{
+                            color: $color_heading;
+                        }
+                    }
+                    &.expanded{
+                        &:hover,&.active{
+                           > a{
+                                color: $color_heading;
+                            }
+                        }
+                    }
+                    &:hover,&.active{
+                       > a{
+                            color: $color_heading;
+                        }
+                    }
+                }
+            }
+        }
+         .fixed-transition .superhero-dropdown > ul{
+            > li{
+                > a{
+                    color: $color_heading;
+                    &:hover,&.active{
+                        background: $color_heading;
+                        color:$color_hover;
+                    }
+                }
+                &:hover,
+                &.active{
+                    >a{
+                        background: $color_heading;
+                        color: $color_hover;
+                    }
+                }
+            }
+            ul{
+                background: $color_main;
+                li{
+
+                    a{
+                        &.active,&:hover {
+                            background:$color_heading;
+                            color: $color_hover;
+                        }
+                    }
+                    &:hover,&.active{
+                        //background: $color_heading;
+                        color: $color_hover;
+                    }
+                    &.expanded{
+                        &:hover,&.active{
+                           > a{
+                                color: $color_hover;
+                                background: $color_heading;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+       
+}
+
+@media (max-width: 1199px) {
+
+    .superhero-mobile-menu-toggle{
+        display:block;
+    }
+    .region-menu{
+        padding: 0;
+    }
+     #section-header{
+        a.superhero-mobile-menu-toggle{
+            padding:0;
+            margin: 0;
+            position: absolute;
+            right: 40px;
+            border:2px solid transparent;
+            color: $color_heading;
+             top: 35px;
+            @include border-radius(100%);
+            @extend .center;
+            font-size: 14px;
+            width: 40px;
+            z-index: 9999;
+            height: 40px;
+            line-height: 36px;
+            &:hover{
+                border-color:$color_heading;
+                color: $color_heading;
+            }
+            &.open{
+                .fa-align-justify:before{
+                    content: "\f00d";
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .header-clear #section-header{
+        a.superhero-mobile-menu-toggle{
+            color: $color_hover;
+            &:hover{
+                border-color:$color_hover;
+                color: $color_hover;
+            }
+        }
+        &.fixed a.superhero-mobile-menu-toggle{
+            color:$color_heading;
+            top:-55px;
+             &:hover{
+                border-color:$color_heading;
+                color: $color_heading;
+            }
+        }
+    }
+    .superhero-dropdown{
+        background:$color_heading;
+         padding-top: 100px;
+        display: none;
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+        ul{
+            width: 100%;
+        }
+        &.open{
+            display: block;
+            max-height: 10000px;
+            > ul{
+                //float: none;
+                >li{
+                    width: 100%;
+                    border-bottom: 1px solid fade_out($color_hover,90%);
+                    line-height: 50px!important;
+                    display: inline-block;
+                    @include transition(inherit !important);
+                     @extend .center;
+                    a{
+                        color: $color_hover;
+                        font-size: 14px;
+                        line-height: 1!important;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                        display: inline-block;
+                        padding: 0;
+                        &:hover,&.active{
+                            color: $color_hover;
+                        }
+                    }
+                    &:hover,&.active{
+                        background: $color_main;
+                        > a{ 
+                            
+                            color: $color_hover;
+                        }
+                    }
+                    &.expanded{
+                        &:hover,
+                        &.active{
+                           > a{
+                                color: $color_hover;
+                            }
+                            background: $color_main;
+                        }
+                    } 
+                }
+                ul{
+                    margin: 0 15px;
+                    max-height: 0;
+                    overflow: hidden;
+                    @include transition(max-height 0.3s ease 0s, opacity 0.3s ease 0s);
+                    margin:0;
+                    @extend .center;
+                    
+                    &.open {
+                        max-height: 10000px;
+                        overflow: visible;
+                    }
+                    li{
+                        padding: 0 ;
+                        width: 100%;
+                        float: left;
+                        background: rgba(0, 0, 0, 0.3);
+                         
+                        a{
+                            font-size: 12px;
+                            &:hover, &.active{
+                                color: $color_hover;
+                            }
+                        }
+                        &:hover,&.active{
+                            background: $color_hover!important; 
+                            a{
+                                 color: $color_heading;
+                            }
+                            i{
+                                color:$color_heading;
+                            }
+                        }
+                        &.expanded{
+                            &:hover,&.active{
+                                background: $color_hover;
+                                a{
+                                    color: $color_heading;
+                                }
+                                i{
+                                    color:$color_heading;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .menu-arrow{
+            right: 20px;
+            background: transparent;
+            color: $color_hover;
+            top: 0;
+            line-height: 50px;
+            padding: 0;
+            width: 77px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+# Catalan translation of jQuery Update (7.x-2.4)
+# Copyright (c) 2014 by the Catalan translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: jQuery Update (7.x-2.4)\n"
+"POT-Creation-Date: 2014-04-04 07:32+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Catalan\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+msgid "User interface"
+msgstr "Interfície d'usuari"
+msgid "None"
+msgstr "Cap"
+msgid "Google"
+msgstr "Google"
+msgid "jQuery Update"
+msgstr "jQuery Update"
+msgid "Microsoft"
+msgstr "Microsoft"
+msgid "@title dialog"
+msgstr "Quadre de @title"
+msgid "jQuery %jquery and jQuery UI %ui"
+msgstr "jQuery %jquery i jQuery UI %ui"

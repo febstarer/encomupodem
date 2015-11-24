@@ -1,0 +1,387 @@
+/*----------------------------------------------------------------------
+# Package - JM Template
+# ----------------------------------------------------------------------
+# Author - JoomlaMan http://www.joomlaman.com
+# Copyright Copyright under commercial licence (C) 2012 - 2013 JoomlaMan
+# License http://www.gnu.org/licenses/gpl-3.0.html GNU/GPLv3
+-----------------------------------------------------------------------*/
+
+@media (max-width: 1500px){
+    #section-header{
+        .logo-short{
+            p{
+                margin: 0;
+            }
+            .logo-short-fixed,
+            .logo-dark{
+                display: none;
+            }
+        }
+        
+        &.fixed.fixed-transition{
+            .logo-short {
+                display: block;
+                 margin: 0 10px;
+                line-height: 70px;
+                .logo-short-fixed{
+                    display: block;
+                  a{
+                    display: block;
+                    height: 40px;
+                    padding: 10px;
+                    border: 3px solid $color_heading;
+                    margin: 15px 0;
+                    img{
+                        display: block;
+                        height: 15px;
+                        width: auto;
+                    }
+                }  
+                } 
+            }
+        } 
+    }
+}
+@media(min-width: 1501px){
+     #section-header{
+        .logo-short-fixed,
+        .logo-dark{
+            display: none;
+        }
+        &.fixed.fixed-transition{
+            .logo-short{
+                .logo-dark {
+                    display: block;
+                    margin: 0 30px;
+                    @extend .left;
+                } 
+            }
+        }
+     }
+}
+@media (max-width:1200px) {
+    .container{
+        width: auto!important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    // feature
+    #section-feature {
+        h2{
+            font-size: 24px ;
+        }
+        a{
+            &.btn{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width:1199px){
+    #section-header{
+        height: 100px;
+        .region-logo.col-md-4,
+        .region-menu.col-md-8{
+            width: 100%;
+        }
+        .region-logo {
+            position: absolute;
+            z-index: 9999;
+           
+        }
+        .region-menu {
+            position: relative;
+        }
+        .region-logo:hover{
+             ~ .region-menu{
+                .superhero-dropdown.open:after{
+                    content: "";
+                    background:rgba(0, 0, 0, 0.3);
+                    height: 100px;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+
+             }
+        }
+        a.superhero-mobile-menu-toggle.open:hover{
+            ~ .superhero-dropdown.open:after{
+                content: "";
+                background:rgba(0, 0, 0, 0.3);
+                height: 100px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+            }
+        }
+    }
+}
+@media (max-width:1200px) and (min-width: 1024px) {
+    .team-box .team-thumb .team-caption .team-name{
+        font-size: 25px;
+    }
+}
+@media (max-width:1023px) and (min-width: 993px) {
+    .team-box .team-thumb .team-caption{
+        .line-center{
+            margin:15px auto;
+        }
+        .team-name{
+            font-size: 20px;
+        }
+    } 
+}
+@media (max-width:992px) {
+    .line-center{
+        margin:15px auto;
+    }
+    .container{
+        width: auto;
+    }
+    // =========== header ============
+    #section-header {
+        .superhero-dropdown > ul > li > a, .site-logo a{
+            line-height: 100px;
+        }
+       
+    }
+    
+    // =========== end header ============
+    
+    // feature
+    #section-feature {
+        h2{
+            font-size: 20px ;
+        }
+        a{
+            &.btn{
+                padding: 9px 6px;
+                font-size: 12px;
+            }
+        }
+    }
+    // News1
+    #section-news1{
+        .block{
+            padding-top: 20px;
+            .block-title{
+                padding-top: 0;
+            }
+        }
+    }
+    // News2
+    #section-news2{
+        padding: 20px 0;
+        .block{
+            .block-title{
+                padding-top: 0;
+            }
+            img{
+                text-align: center;
+            }
+        }
+    }
+    
+    #section-bottom{
+        .region {
+            margin-bottom: 20px;
+        }
+    }
+    
+    #section-footer{
+        text-align: center;
+        ul{
+            float: none!important;
+        }
+    }
+    .carousel-slide-white{
+        padding-bottom: 130px!important;
+        padding-top: 130px!important;
+        .carousel h2{
+            font-size: 18px;
+        }
+    }
+}
+@media (max-width: 800px){
+    .image-box {
+        height: 400px;
+    }
+    #section-banner .icons-menu-wrap #icons-menu ul{
+        display: none;
+    }
+}
+
+@media (max-width: 979px){
+    .intro-title{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 979px){
+    .intro-title{
+        font-size:40px;
+    }
+}
+@media (max-width:787px){
+    .view-blog{
+        .view-content{
+            .views-row.col-sm-6{
+                min-height: 500px;
+            }
+        }
+    }
+}
+
+@media (max-width:784px){
+    // feature
+    #section-feature {
+        h2{
+            font-size: 18px ;
+        }
+        a{
+            &.btn{
+                padding: 9px 3px;
+                font-size: 13px;
+            }
+        }
+    }
+
+}
+@media (min-width:768px){
+    #section-contact .region-callus .contact-message{
+        padding: 0 25px;
+    }
+}
+
+@media (max-width:767px){
+    // feature
+    #section-feature {
+        text-align: center;
+        a{
+            &.btn{
+                font-size: 13px;
+                margin-top: 10px;
+                padding: 10px;
+            }
+        }
+    }
+    // Bottom sections
+    #section-bottom{
+        padding:$mainPadding 0 0 0;
+        [class*="region"],
+        [class^="region"]{
+            margin: 0 0 $mainMargin 0;
+            padding: 0;
+            > .block{
+                padding: 0 10px;
+            }
+        }
+    }
+    .carousel-slide-white{
+        padding-bottom: 60px!important;
+        padding-top: 60px!important;
+        .carousel h2{
+            font-size: 14px;
+        }
+    }
+    .intro-title{
+        font-size:30px;
+    }
+    .title-custom .title-media .title-wrap .title-page{
+        padding:35px 0;
+    }
+    .title-media .title-wrap .title-page .title-detail .title-name, 
+    .title-media .title-wrap .title-page .title-layer-page .title-name{
+        font-size:16px;
+    }
+    .title-custom .title-media .title-wrap .title-page .title-detail .title-meta,
+    .title-custom .title-media .title-wrap .title-page .title-layer-page .title-meta{
+        font-size:14px;
+    }
+    #section-footer{
+        .container{
+            ul{
+                @extend .center;
+            }
+        }
+    }
+}
+@media (max-width:640px){
+    #section-header{
+        .info-menu{
+            display: none;
+        }
+        .site-logo {
+            margin: 0 20px;
+        } 
+    }
+
+    // Bottom sections
+    #section-bottom{
+        [class*="region"],
+        [class^="region"]{
+            margin: 0;
+            padding: 0;
+            + [class*="region"],
+            + [class^="region"]{
+                margin-top: 20px;
+            }
+        }
+        form{
+            margin: 0 0 20px;
+        }
+    }
+    // Footer sections
+    #section-footer{
+        text-align: center;
+        padding: 10px 20px;
+        ul.menu{
+            float: none;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+    .view-superhero-portfolio #filters li{
+        margin-bottom: 15px;
+    }
+    .home-portfolio .webform-client-form input{
+        font-size: 14px;
+    }
+     .intro-title{
+        font-size:20px;
+    }
+}
+
+@media (max-width: 600px){
+   .image-box {
+        height: 300px; 
+    }
+}
+
+@media (max-width:589px){
+    // feature
+    #section-feature {
+        h2{
+            font-size: 16px ;
+        }
+    }
+}
+@media (max-width:526px){
+    // feature
+    #section-feature {
+        h2{
+            font-size: 14px ;
+        }
+    }
+}
+@media (max-width:480px){
+    .carousel-slide-white{
+        padding-bottom: 30px!important;
+        padding-top: 30px!important;
+    }
+    .intro-title{
+        font-size:15px;
+    }
+    .intro-subtitle{display: none;}
+}
